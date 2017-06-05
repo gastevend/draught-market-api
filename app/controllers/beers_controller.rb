@@ -3,9 +3,6 @@ class BeersController < ProtectedController
 
   # GET /beers
   def index
-    # @beers = Beer.all
-
-    # render json: @beers
     @beers = current_user.beer.sort_by(&:created_at)
 
     render json: @beers
@@ -18,7 +15,7 @@ class BeersController < ProtectedController
 
   # POST /beers
   def create
-    @beer = Beer.new(beer_params)
+    @beer = current_user.beer.build(beer_params)
 
     if @beer.save
       render json: @beer, status: :created, location: @beer
@@ -44,7 +41,7 @@ class BeersController < ProtectedController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_beer
-      @beer = Beer.find(params[:id])
+      @beer = current_user.beer.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.

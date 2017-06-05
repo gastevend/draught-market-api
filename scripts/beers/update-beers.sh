@@ -1,8 +1,8 @@
 #!/bin/bash
 
 API="${API_ORIGIN:-http://localhost:4741}"
-URL_PATH="/beers/1"
-TOKEN=BAhJIiU5Y2UxNDBkYThhNjQ4MmZiMzIwYmRmNzFjNDliMzI0MgY6BkVG--5081075db516ef8071a0f73caf6398759a849952
+URL_PATH="/beers/3"
+TOKEN=BAhJIiU4NjUyNThiMjM0YWE4OWZiZDNjYTI2NDdkYzQ1M2I2YQY6BkVG--f8df3e4a73185c4869eb47979f26946f20ffd2e2
 curl "${API}${URL_PATH}" \
   --include \
   --request PATCH \
@@ -10,8 +10,8 @@ curl "${API}${URL_PATH}" \
   --header "Authorization: Token token=$TOKEN" \
   --data '{
     "beer": {
-      "name": "Finest Kind",
-      "price": "7.00"
+      "name": "Really Old Brown Dog",
+      "price": "6.00"
     }
   }'
 
