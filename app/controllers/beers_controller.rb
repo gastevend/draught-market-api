@@ -1,9 +1,12 @@
-class BeersController < ApplicationController
-  before_action :set_beer, only: [:show, :update, :destroy]
+class BeersController < ProtectedController
+  before_action :set_beer, only: [:update, :destroy]
 
   # GET /beers
   def index
-    @beers = Beer.all
+    # @beers = Beer.all
+
+    # render json: @beers
+    @beers = current_user.beer.sort_by(&:created_at)
 
     render json: @beers
   end

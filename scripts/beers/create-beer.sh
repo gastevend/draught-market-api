@@ -2,7 +2,7 @@
 
 API="${API_ORIGIN:-http://localhost:4741}"
 URL_PATH="/beers"
-TOKEN=BAhJIiU5Y2UxNDBkYThhNjQ4MmZiMzIwYmRmNzFjNDliMzI0MgY6BkVG--5081075db516ef8071a0f73caf6398759a849952
+TOKEN=BAhJIiU3ZDk2MTEzYmM5NmM3OWJhOTM2Y2FjYjM1NzQwNDMyMQY6BkVG--e01bf79ed9dc390c47be6bef4590a1cdf240d275
 curl "${API}${URL_PATH}" \
   --include \
   --request POST \
@@ -10,8 +10,8 @@ curl "${API}${URL_PATH}" \
   --header "Authorization: Token token=$TOKEN" \
   --data '{
     "beer": {
-      "name": "ESB",
-      "price": "5.25",
+      "name": "Bud Light",
+      "price": "3.00",
       "user_id": "1"
     }
   }'
