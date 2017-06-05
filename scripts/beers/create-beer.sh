@@ -10,8 +10,7 @@ curl "${API}${URL_PATH}" \
   --header "Authorization: Token token=$TOKEN" \
   --data '{
     "beer": {
-      "name": "Sam Summer",
-      "price": "5.25",
-      "user_id": "3"
+      "name": "Sam Winter",
+      "price": "4.00"
     }
   }'
