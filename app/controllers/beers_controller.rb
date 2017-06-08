@@ -8,11 +8,6 @@ class BeersController < ProtectedController
     render json: @beers
   end
 
-  # GET /beers/1
-  def show
-    render json: @beer
-  end
-
   # POST /beers
   def create
     @beer = current_user.beer.build(beer_params)

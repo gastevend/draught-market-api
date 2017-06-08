@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 Rails.application.routes.draw do
 
-  resources :beers, except: [:new, :edit]
+  resources :beers, except: [:new, :edit, :show]
   resources :examples, except: [:new, :edit]
   post '/sign-up' => 'users#signup'
   post '/sign-in' => 'users#signin'
