@@ -223,11 +223,26 @@ Content-Type: application/json; charset=utf-8
 ```
 ### Beers
 
+|  Verb | URI Pattern | Controller#Action
+|-------|-------------|------------------|
+|  GET  | `/beers`    |    `beers#index` |
+|  POST | `/beers`    |    `beers#create`|
+|  PATCH| `/beers/:id`|    `beers#update`|
+| DELETE| `/beers/:id`|  `beers#destroy` |
+
 ## Technologies
+For this application the technologies that were used were but not limited too: Javascript, Jquery, Handlebars, Ruby, Ruby on Rails, Active Record, HTMl, Sass, JSON, Bootsrap, Animate.css, Purecss, and curl
 
 ## Approach
+My approach on the backend with this one was to actually simplify what I had previously done on project two. I think I had over complicated my ERD then and I wanted to stick to what was needed this time around. I have a one-to-many relationship.
+
+I enjoy writing logic on the backend although I did less customizing
+on the backend this time around I still enjoyed using rails.
+Because of poor planning i actually had to reconsider what I was doing but jumping on this first helped relieve any of that.
 
 ## Major Hurdles
+
+I actually wish I planned the backend better this time around. I had a hard time trying to come up with the right structure that worked for the app. I had to tweak things here and there early on and thrashed a little bit all becuase I diddnt take the time to stop and think but I was able to get through it.
 
 ## [License](LICENSE)
 
