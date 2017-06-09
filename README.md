@@ -21,7 +21,7 @@ Install with `bundle install`.
 -   [`postgres`](http://www.postgresql.org)
 
 ## ERD
-[Draught Exchange ERD](./assets/styles/images/erd/)
+[Draught Exchange ERD](https://github.com/gastevend/draught-market-client/blob/master/assets/styles/images/erd/capstone_ERD.JPG)
 ## API
 
 
